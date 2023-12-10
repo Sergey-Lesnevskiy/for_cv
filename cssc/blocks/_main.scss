@@ -1,0 +1,7 @@
+main{
+  background-color: $gray;
+  padding-bottom: $margin-container;
+}
+button{
+  @include button;
+}

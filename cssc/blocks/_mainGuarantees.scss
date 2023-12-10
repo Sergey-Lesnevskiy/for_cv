@@ -1,0 +1,32 @@
+.guarantees {
+  margin-bottom: $margin-container;
+  @include flexColumn;
+  .guarantees__text {
+    text-align: center;
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      padding: 0 30px;
+      width: 740px;
+      margin-bottom: 20px;
+    }
+  }
+  .guarantees__certificates {
+    display: flex;
+    margin-bottom: 20px;
+    .guarantees__certificate-wrapper {
+      img {
+        margin-bottom: 20px;
+      }
+      p {
+        max-width: 366px;
+        text-align: center;
+        font-weight: 1000;
+      }
+    }
+  }
+  button {
+    width: 315px;
+  }
+}
