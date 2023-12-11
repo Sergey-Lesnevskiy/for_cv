@@ -1,0 +1,128 @@
+@media (max-width: 1036px) {
+  .container {
+    max-width: 768px;
+  }
+  header {
+    position: relative;
+    height: 262px;
+    box-shadow: none;
+    .header__content {
+      .header__description-delivery {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 210px;
+        left: 50%;
+        margin-left: -375px;
+        border-right: none;
+        padding-right: 0;
+        width: 750px;
+        font-size: 12px;
+        height: auto;
+      }
+    }
+    .header__menu {
+      height: 72px;
+      border-top: 3px solid #a78bfa3c;
+      border-bottom: 3px solid #a78bfa3c;
+    }
+  }
+  .delivery {
+    max-width: 768px;
+    .delivery__description {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      .delivery__wrapper-text {
+        max-width: 100%;
+      }
+      .delivery__photo {
+        max-width: 768px;
+        img {
+          width: 768px;
+        }
+      }
+    }
+  }
+  .benefits {
+    .benefits__container-advantages {
+      grid-template-columns: repeat(2, 372px);
+      gap: 10px;
+      .wrapper-advantage {
+        font-size: 12px;
+        img {
+          width: 108px;
+          height: 108px;
+          margin-right: 10px;
+        }
+        .advantage__text {
+          width: auto;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+  .guarantees {
+    .guarantees__certificates {
+      row-gap: 76px;
+      column-gap: 0;
+    }
+  }
+  .reviews {
+    .review_slider {
+      position: relative;
+      width: 570px;
+      height: 224px;
+      overflow: hidden;
+      .review__wrapper-slider {
+        max-width: 1157px;
+        position: absolute;
+        .review {
+          width: 570px;
+          height: auto;
+        }
+      }
+    }
+    .arrow-left {
+      top: 125px;
+      left: 31px;
+    }
+    .arrow-right {
+      top: 125px;
+      right: 31px;
+    }
+  }
+  footer{
+    .header__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      .header__contacts{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: end;
+      }
+      .header__logo-wrapper{
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .header__menu{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+      }
+    }
+    .footer__small-text{
+      flex-direction: column;
+      align-items: center;
+      p{
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      p:last-child{
+        text-align: center;
+
+      }
+    }
+  }
+}
