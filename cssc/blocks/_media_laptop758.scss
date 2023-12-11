@@ -1,0 +1,139 @@
+@media (max-width: 758px) {
+  .container {
+    max-width: 640px;
+  }
+  header {
+    height: auto;
+    .header__content {
+      position: relative;
+      .header__logo {
+        margin-left: 10px;
+        .header__logo-title {
+          font-size: 18px;
+        }
+      }
+      .header__description-delivery {
+        display: none;
+      }
+      .header__contacts {
+        display: flex;
+        align-items: center;
+        p {
+          padding: 0;
+          font-size: 20px;
+          margin-right: 60px;
+        }
+        span:last-child {
+          display: none;
+        }
+      }
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 32px;
+        left: calc(100% - 38px);
+        width: 18px;
+        height: 10px;
+        cursor: pointer;
+        z-index: 5;
+      }
+      /* добавляем "гамбургер" */
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $purple;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+      }
+      .menu__btn > span::before {
+        content: "";
+        top: -5px;
+      }
+      .menu__btn > span::after {
+        content: "";
+        top: 5px;
+      }
+    }
+    .header__menu {
+      display: none;
+    }
+  }
+  // .delivery .delivery__description .delivery__photo img
+  .delivery {
+    .delivery__description {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .delivery__photo {
+        img {
+          width: 640px;
+        }
+      }
+    }
+  }
+  .benefits {
+    .benefits__container-advantages {
+      grid-template-columns: repeat(1, 372px);
+      gap: 28px;
+      .wrapper-advantage {
+        .advantage__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .guarantees {
+    .guarantees__text {
+      p {
+        max-width: 640px;
+      }
+    }
+  }
+  .reviews {
+    .review_slider {
+      width: 442px;
+      height: 280px;
+      .review__wrapper-slider {
+        .review {
+          grid-template-rows: 198px 41px;
+          width: 442px;
+          height: 280px;
+          h4 {
+            font-size: 18px;
+          }
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  footer{
+
+    .header__content{
+      grid-template-rows: 1fr 1fr 1fr;
+      .header__logo-wrapper{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+    
+      } 
+      .header__contacts{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+      }
+    }
+  } 
+}
