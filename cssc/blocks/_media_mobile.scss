@@ -1,0 +1,101 @@
+@media (max-width: 640px) {
+  .container {
+    padding: 0 5px;
+    max-width: 400px;
+  }
+
+  header {
+    .header__content {
+      margin-bottom: 0;
+      display: block;
+      .header__contacts {
+        p {
+          margin: 0 0 0 54px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .delivery {
+    .delivery__description {
+      .delivery__photo {
+        img {
+          max-width: 300px;
+          width: auto;
+        }
+      }
+    }
+    .calculator {
+      .wrapper__inputs {
+        width: 300px;
+        grid-template-columns: repeat(1, 300px);
+        input {
+          grid-column: 1/1;
+        }
+        input:first-child {
+          grid-column: 1/1;
+        }
+        button:last-child {
+          grid-column: 1/1;
+        }
+      }
+    }
+  }
+  .benefits {
+    .benefits__container-advantages {
+      grid-template-columns: repeat(1, 270px);
+      gap: 10px;
+      .wrapper-advantage {
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+  .reviews {
+    margin-bottom: 120px;
+    .review_slider {
+      width: 310px;
+      .review__wrapper-slider {
+        .review {
+          width: 305px;
+        }
+      }
+    }
+    .arrow-left,
+    .arrow-right {
+      top: 348px;
+    }
+  }
+  .contactForm {
+    form {
+      width: 300px;
+      grid-template-columns: 300px;
+      grid-template-rows: 48px 48px 48px 48px;
+      input {
+        grid-column: 1/1;
+      }
+      button {
+        grid-column: 1/1;
+        grid-row: 6;
+      }
+      textarea {
+        grid-column: 1/1;
+      }
+    }
+  }
+  footer{
+
+    .header__content{
+      grid-template-columns: 100px 100px ;
+    }
+     .header__menu{
+       ul {
+        font-size: 14px;
+        width: 300px;
+    }
+
+     }
+      
+  } 
+}
