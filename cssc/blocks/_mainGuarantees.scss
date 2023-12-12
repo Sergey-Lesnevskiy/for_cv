@@ -14,7 +14,7 @@
   }
   .guarantees__certificates {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: $margin-container;
     .guarantees__certificate-wrapper {
       img {
         margin-bottom: 20px;

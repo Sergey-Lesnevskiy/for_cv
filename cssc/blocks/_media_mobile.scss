@@ -84,18 +84,15 @@
       }
     }
   }
-  footer{
-
-    .header__content{
-      grid-template-columns: 100px 100px ;
+  footer {
+    .header__content {
+      grid-template-columns: 100px 100px;
     }
-     .header__menu{
-       ul {
+    .header__menu {
+      ul {
         font-size: 14px;
         width: 300px;
+      }
     }
-
-     }
-      
-  } 
+  }
 }
