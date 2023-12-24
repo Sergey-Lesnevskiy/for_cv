@@ -1,3 +1,4 @@
+
 .container {
   max-width: 1530px;
   margin: 0 auto;
@@ -11,6 +12,9 @@ header {
   .header__content {
     display: flex;
     margin-bottom: 20px;
+    .hamburger:hover{
+      cursor: pointer;
+    }
     .menu__btn {
       display: none;
     }
@@ -56,6 +60,21 @@ header {
       display: flex;
       @include flex;
       width: 372px;
+      li{
+        a{
+          padding: 5px 0;
+          text-decoration: none;
+          // transition:
+          // width 1s,
+          // height 1s,
+          // border-bottom 1s,
+          // transform 2s;
+        }
+        a:hover{
+          // text-decoration: #00fffc;
+          border-bottom: 3px solid #30121e ;
+        }
+      }
     }
     button {
       width: 196px;

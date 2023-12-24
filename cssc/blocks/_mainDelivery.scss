@@ -49,9 +49,7 @@
       grid-auto-rows: minmax(48px, auto);
       grid-gap: 10px;
       input{
-        border-radius: 5px;
         padding-left: 10px;
-        border: 1px solid black;
       }
       input:first-child, button:last-child {
         grid-column: 1/3;

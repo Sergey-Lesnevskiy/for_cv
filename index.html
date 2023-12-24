@@ -7,6 +7,7 @@
   <link type="image/x-icon" href="./assets/image/f.ico" rel="shortcut icon" />
   <link type="Image/x-icon" href="./assets/image/f.ico" rel="icon" />
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./js.js" defer></script>
   <title>For cv</title>
 </head>
 
@@ -42,25 +43,38 @@
             Звонки по России бесплатны
           </span>
         </div>
-        <div class="menu__btn">
+        <!-- <div class="menu__btn">
           <span></span>
-      </div>
+        </div> -->
+        <div class="hamburger" id="hamburger-9">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </div>
       <nav class="header__menu">
-        <ul>
-          <li>Калькулятор</li>
-          <li>О нас</li>
-          <li>Гарантия</li>
-          <li>Отзыв</li>
+        <ul class="list">
+          <li class="link">
+            <a href="#calculator">Калькулятор</a>
+          </li>
+          <li>
+            <a href="#aboutUs">О нас</a>
+          </li>
+          <li>
+            <a href="#guarantees">Гарантия</a>
+          </li>
+          <li>
+            <a href="#reviews">Отзыв</a>
+          </li>
         </ul>
         <button class="header__button">Оставить заявку </button>
       </nav>
     </div>
   </header>
-   <main>
+  <main>
 
     <div class="container">
-      <div class="delivery">
+      <div class="delivery" id="calculator">
         <div class="delivery__description">
           <div class="delivery__wrapper-text">
             <h1>Без проблемная доставка купленных вещей из США, Европы и Азии в Россию
@@ -74,7 +88,7 @@
             <img src="./assets/jpg/unpacking.jpg" alt="unpacking">
           </div>
         </div>
-         <form class="calculator" type="submit">
+        <form class="calculator" type="submit">
           <h2>Калькулятор доставки</h2>
           <p>Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
           <div class="wrapper__inputs">
@@ -89,10 +103,10 @@
             <input id="cityDelivery" type="text" placeholder="Город доставки">
             <button type="submit">Заказать расчёт</button>
           </div>
-        </form> 
+        </form>
       </div>
 
-   <div class="benefits">
+      <div class="benefits" id="aboutUs">
         <h2>Наши преимущества</h2>
         <div class="benefits__container-advantages">
           <div class="wrapper-advantage">
@@ -146,7 +160,7 @@
           </div>
         </div>
       </div>
-        <div class="guarantees">
+      <div class="guarantees" id="guarantees">
         <div class="guarantees__text">
           <h2>Гарантии качества</h2>
           <p>
@@ -175,7 +189,7 @@
         </div>
         <button class="button">Показать больше документов</button>
       </div>
-       <div class="reviews">
+      <div class="reviews" id="reviews" >
         <h2>Отзывы</h2>
         <div class="review_slider">
           <div class="review__wrapper-slider">
@@ -204,7 +218,7 @@
           <img src="./assets/svg/arrowRight.png" alt="">
         </div>
       </div>
-     <div class="contactForm">
+      <div class="contactForm">
         <h2>Остались вопросы?</h2>
         <form>
           <input type="text" placeholder="Имя">
@@ -215,7 +229,7 @@
           <button type="submit" class="button">Оставить заявку</button>
         </form>
       </div>
-    </div> 
+    </div>
   </main>
 
   <footer>
@@ -264,7 +278,7 @@
         </p>
       </div>
     </div>
-  </footer>  
+  </footer>
 </body>
 
 </html>
